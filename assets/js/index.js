@@ -9,10 +9,7 @@ function backgroundImage() {
     };
 
     current_img_num = next_img_num != 0 ? next_img_num : random_img_num();
-
-    if (next_img_num == 0) {
-        next_img_num = random_img_num();
-    }
+    next_img_num = random_img_num();
 
     var img_url = function (img_num) {
         return img_path + 'bg_' + img_num + '.jpg';
@@ -41,11 +38,10 @@ function backgroundImage() {
 function preLoadImg(url) {
     var img = new Image();
     img.src = url;
-    next_img_num = 0;
 }
 
 backgroundImage();
 
 setInterval(function () {
     backgroundImage()
-}, 3000);
+}, 5000);
