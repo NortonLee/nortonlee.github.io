@@ -29,20 +29,4 @@ function backgroundImage() {
     span.innerHTML = '<span style="background-image: url(' + (current_image = img_url()) + ');width: 0px;height: 0px;display: inline;"></span>';
 }
 
-function initImg() {
-    for (i = 1; i <= img_num; i++) {
-        $.ajax({
-            url: 'https://nortonlee.github.io/assets/images/bg_' + i + ".jpg",
-            dataType: "image/jpeg",
-            cache: true,
-            success: function (xml, status) {
-            }
-        });
-    }
-}
 backgroundImage();
-initImg();
-
-setInterval(function () {
-    backgroundImage();
-}, 5000);
