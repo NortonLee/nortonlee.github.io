@@ -34,8 +34,8 @@ function initImg() {
         $.get('https://nortonlee.github.io/assets/images/bg_' + i + ".jpg", function (data) {})
     }
 }
-initImg();
 backgroundImage();
+initImg();
 
 setInterval(function () {
     backgroundImage();
