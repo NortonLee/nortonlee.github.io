@@ -2,6 +2,9 @@ var current_image;
 var next_img_num = 0;
 var current_img_num;
 var img_num = 100;
+
+$("body").height(window.innerHeight);
+
 function backgroundImage() {
     var img_path = 'assets/images/';
     var random_img_num = function () {
