@@ -24,7 +24,6 @@ function backgroundImage() {
     setTimeout(function () {
         body.backgroundImage = 'url(' + current_image + ')';
     });
-
     var span = document.getElementById('img_placer');
     span.innerHTML = '<span style="background-image: url(' + (current_image = img_url()) + ');width: 0px;height: 0px;display: inline;"></span>';
 }
