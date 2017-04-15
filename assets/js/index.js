@@ -31,3 +31,6 @@ function backgroundImage() {
 }
 
 backgroundImage();
+setInterval(function(){
+    backgroundImage();
+},3000);
