@@ -48,4 +48,4 @@ backgroundImage();
 
 setInterval(function () {
     backgroundImage()
-}, 3000);
+}, 5000);
