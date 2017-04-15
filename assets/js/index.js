@@ -1,8 +1,7 @@
 var current_image;
+var img_num = 11;
 function backgroundImage() {
     var img_path = 'assets/images/';
-
-    var img_num = 11;
     var random_img_num = function () {
         return Math.floor(Math.random() * img_num + 1);
     };
@@ -30,7 +29,14 @@ function backgroundImage() {
     span.innerHTML = '<span style="background-image: url(' + (current_image = img_url()) + ');width: 0px;height: 0px;display: inline;"></span>';
 }
 
+function initImg() {
+    for (i = 1; i <= img_num; i++) {
+        $.get('https://nortonlee.github.io/assets/images/bg_' + i + ".jpg", function (data) {})
+    }
+}
+initImg();
 backgroundImage();
-setInterval(function(){
+
+setInterval(function () {
     backgroundImage();
-},5000);
+}, 5000);
