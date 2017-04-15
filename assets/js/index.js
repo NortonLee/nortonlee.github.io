@@ -31,7 +31,13 @@ function backgroundImage() {
 
 function initImg() {
     for (i = 1; i <= img_num; i++) {
-        $.get('https://nortonlee.github.io/assets/images/bg_' + i + ".jpg", function (data) {})
+        $.ajax({
+            url: 'https://nortonlee.github.io/assets/images/bg_' + i + ".jpg",
+            dataType: "image/jpeg",
+            cache: true,
+            success: function (xml, status) {
+            }
+        });
     }
 }
 backgroundImage();
