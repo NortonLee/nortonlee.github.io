@@ -48,6 +48,3 @@ backgroundImage();
 setInterval(function () {
     backgroundImage()
 }, 4000);
-
-
-alert(wx);
