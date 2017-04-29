@@ -2,6 +2,7 @@ var current_image;
 var next_img_num = 0;
 var current_img_num;
 var img_num = 107;
+var intervalId;
 
 $("body").height(window.innerHeight);
 
@@ -45,6 +46,6 @@ function preLoadImg(url) {
 
 backgroundImage();
 
-setInterval(function () {
+intervalId = setInterval(function () {
     backgroundImage()
 }, 4000);
