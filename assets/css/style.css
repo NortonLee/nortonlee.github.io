@@ -122,3 +122,13 @@ div{
     padding:0 20px;
     text-align: right;
 }
+
+.footer{
+    position: fixed;
+    width: 100%;
+    color:#333;
+    bottom:15px;
+}
+.footer a{
+    color:#007acc;
+}
