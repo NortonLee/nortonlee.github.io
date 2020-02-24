@@ -130,5 +130,7 @@ div{
     bottom:15px;
 }
 .footer a{
-    color:#007acc;
+    color: #999;
+    text-decoration: none;
+    font-family: initial;
 }
