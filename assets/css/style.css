@@ -128,6 +128,7 @@ div{
     width: 100%;
     color:#333;
     bottom:15px;
+    text-align: center;
 }
 .footer a{
     color: #999;
